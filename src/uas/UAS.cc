@@ -3493,6 +3493,8 @@ QString UAS::getShortModeTextFor(uint8_t base_mode, uint32_t custom_mode, int au
                     mode += "|RTL";
                 } else if (px4_mode.sub_mode == PX4_CUSTOM_SUB_MODE_AUTO_LAND) {
                     mode += "|LAND";
+                } else if (px4_mode.sub_mode == PX4_CUSTOM_SUB_MODE_AUTO_RTGS) {
+                    mode += "|RTGS";
                 }
             }
         }
